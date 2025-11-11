@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { UserListComponent } from './features/users/user-list.component';
+import { AddUserComponent } from './features/users/add-user.component';
 
 export const routes: Routes = [
   {
@@ -15,6 +17,14 @@ export const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'users/list',
+    component: UserListComponent
+  },
+  {
+    path: 'users/add',
+    component: AddUserComponent
   },
   {
     path: '**',

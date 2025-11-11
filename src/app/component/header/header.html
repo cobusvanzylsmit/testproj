@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" routerLink="/">Brand</a>
+    <a class="navbar-brand d-flex align-items-center gap-2" routerLink="/">
+      <i class="bi bi-people fs-3"></i>
+      <span style="font-family: 'Pacifico', cursive; font-size: 1.7rem; letter-spacing: 2px;">USSO</span>
+    </a>
 
     <!-- Toggler for offcanvas -->
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Toggle navigation">
@@ -23,6 +26,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link text-dark" routerLink="/contact" routerLinkActive="active" data-bs-dismiss="offcanvas">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" routerLink="/users/list" routerLinkActive="active" data-bs-dismiss="offcanvas">View Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" routerLink="/users/add" routerLinkActive="active" data-bs-dismiss="offcanvas">Add User</a>
           </li>
         </ul>
       </div>
